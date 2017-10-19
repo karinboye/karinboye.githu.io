@@ -114,6 +114,7 @@ img {
     width: 60%;
     float: left;
     margin: 4% 0 4% 4%;
+   
 
 }
 .sidebar {
@@ -126,6 +127,7 @@ img {
 }
 .clearfix {
     clear: both;
+    align-content: center;
 }
 /*---Start Parallax Section--*/
 
