@@ -49,50 +49,8 @@ img {
 
 }
 
-/*---Start Image Slider Style--*/
-.slider {
-    width: 100%;
 
-}
-.slider1 img{
-    min-width: 100%;
-    margin: 0 auto; 
-}
-.slider .bx-wrapper .bx-contrls-direction a {
-    outline: 0 none;
-    position: absolute;
-    text-align: -9999px;
-    top: 40%;
-    height: 71px;
-    width: 40px;
-    z-index: -1;
-    transition: all 0.7s;
-
-}
-.slider .bx-wrapper:hover .bx-contrls-direction a {
-    z-index: 5; 
-}
-.slider .bx-wrapper .bx-prev {
-    background: #000 url(img/left-arrow-white.png) no-repeat 8px 13px;
-    left: 8px;
-    opacity: 0.3;
-
-}
-.slider .bx-wrapper .bx-prev:hover {
-    opacity: 0.6;
-    
-}
-.slider .bx-wrapper .bx-next {
-    background: #000 url(img/rigth-arrow-white.png) no-repeat 12px 10px;
-    right:  8px;
-    opacity: 0.3;
-
-}
-.slider .bx-wrapper .bx-next:hover {
-    opacity: 0.6;
-    
-}
-/*---End Image Slider Style--*/
+/*--hvor teksten står--*/
 
 .one-half {
     width: 44%;
@@ -128,25 +86,28 @@ img {
 .clearfix {
     clear: both;
     align-content: center;
+
+    
 }
-/*---Start Parallax Section--*/
+/*---storebilde--*/
 
 .parallax-inner {
     padding-top: 90px;
     padding-bottom:  300px;
+   color: white;
     
 }
 .parallax-1 {
-    background: url(poor2.jpg) repeat fixed; 
+    background: url(ikke.jpg) repeat fixed; 
     text-align: center;
 }
 .parallax-inner h3, .parallax-inner p  {
     color: #f1f1f1;
 
 }
-/*---End Parallax Section--*/
+/*---end store bilde--*/
 footer {
-    background:  #262E37;
+    background:  rgb(150, 137, 137);
     opacity: 0.9;
     width: 100%;
     margin-top: 5%;
@@ -190,4 +151,6 @@ img {
 h3 {
     padding-top: 3%;
 }
-}
+
+
+

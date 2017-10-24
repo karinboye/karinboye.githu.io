@@ -112,7 +112,7 @@ img {
 
 .left-col{
     width: 60%;
-    float: left;
+    float: center;
     margin: 4% 0 4% 4%;
 
 }
@@ -137,7 +137,7 @@ img {
     
 }
 .parallax-1 {
-    background: url(steinhugger.jpeg)repeat fixed;
+    background: url(poor2.jpg)repeat fixed;
     text-align: center;
   
 
@@ -149,7 +149,7 @@ img {
 }
 /*---End Parallax Section--*/
 footer {
-    background:  #FFFFFF;
+    background:  rgb(150, 137, 137);
     opacity: 0.9;
     width: 100%;
     margin-top: 5%;
