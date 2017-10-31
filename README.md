@@ -1,8 +1,7 @@
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/karinboye/karinboye.githu.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-file:///Users/karinboye/Documents/GitHub/karinboye.github.io/pr%C3%B8vpa%CC%8Any/paany.html
-
+https://github.com/karinboye/karinboye.githu.io/prøvpåny/paany.html
 
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
