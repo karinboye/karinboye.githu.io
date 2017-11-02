@@ -17,7 +17,7 @@ h1 {
     font-family: 'Nobile', sans-serif;
     text-align: center;
     font-size: 175%;
-    color: #aa9797;
+    color: #e7c3c3;
     text-transform: uppercase;
     letter-spacing: 3px;
     padding: 3% 0; 
@@ -108,7 +108,7 @@ img {
 }
 /*---end store bilde--*/
 footer {
-    background:  rgb(150, 137, 137);
+    background:  rgb(216, 192, 192);
     opacity: 0.9;
     width: 100%;
     margin-top: 5%;
