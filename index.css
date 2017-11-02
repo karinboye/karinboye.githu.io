@@ -17,7 +17,7 @@ h1 {
     font-family: 'Nobile', sans-serif;
     text-align: center;
     font-size: 175%;
-    color: #817171;
+    color: #aa9797;
     text-transform: uppercase;
     letter-spacing: 3px;
     padding: 3% 0; 
@@ -98,8 +98,9 @@ img {
     
 }
 .parallax-1 {
-    background: url(image.jpg) repeat fixed; 
+    background: url(back.jpg) repeat fixed; 
     text-align: center;
+    
 }
 .parallax-inner h3, .parallax-inner p  {
     color: #f1f1f1;
