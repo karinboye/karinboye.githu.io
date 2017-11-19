@@ -1,0 +1,23 @@
+:root {
+    --fyll: 10px; 
+}
+
+header {
+    color: green;
+    font-size: 1.2 em;
+    padding: 10px;
+    padding-bottom: 20px; 
+
+}
+
+article {
+    font-size: 1.1em;
+    padding: var(--fyll); 
+
+}
+
+#liste {
+    width: 100vw; 
+    
+    
+}
