@@ -47,7 +47,7 @@
       top:50px;
       width: 250px;
       height: 180px;
-      animation: drive 5s 1s linear infinite; 
+      animation: drive 10s 1s linear infinite; 
       background-image: url("santa2.jpg");
       background-size: 100%;
       background-repeat: no-repeat;
