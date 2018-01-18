@@ -44,6 +44,6 @@ function visSpiller(snapshot) {
       
     </div>`
 
-
+}
 
 

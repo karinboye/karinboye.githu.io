@@ -26,20 +26,20 @@
 
 #sprite {
     position: absolute;
-    width: 256px;
-    height: 256px;
+    width: 250px;
+    height: 250px;
     left: 0px;
-    top:0px;
+    top:10px;
     transform: scaleX(-1);
-    background-image: url("spritestrip.png");
+    background-image: url("zombie.png");
     background-position-x: 0px;
     background-position-y: 0px;
 }
 
 #sprite {
-  animation:  step 800ms  infinite steps(6),
-  walk 3s infinite alternate linear,
-  flipper 6s infinite;
+  animation:  step 1000ms  infinite steps(6),
+  walk 12s infinite alternate linear,
+  flipper 3s infinite;
 }
 
 @keyframes walk {
