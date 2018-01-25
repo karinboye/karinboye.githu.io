@@ -1,0 +1,162 @@
+#bil {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    left: 0;
+    bottom: 0;
+    background-image: url(bil.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+    animation: drive 5s forwards, liftup 2s 5s forwards, liftdown 2s 11s, driveout 3s 13s;
+}
+
+#tittel
+{
+    position: absolute;
+   
+
+}
+
+@keyframes drive {
+    0% {
+        opacity: 0;
+        transform: scale(0, 0);
+        left: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1, 1.1);
+    }
+    100% {
+        transform: scale(1, 1);
+        left: 50%;
+    }
+}
+
+
+
+#logo {
+    position: absolute;
+    left: 57.5%;
+    bottom: 50vh;
+    animation: logo 1s steps(5, start) infinite;
+    -webkit-animation: logo 1s steps(5, start) infinite;
+}
+
+@keyframes logo {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes logo {
+    to {
+        visibility: hidden;
+    }
+}
+
+@keyframes liftup {
+    0% {
+        left: 50%;
+        bottom: 0;
+    }
+    100% {
+        left: 50%;
+        bottom: 80px;
+    }
+}
+
+@keyframes liftdown {
+    0% { 
+        background-image: url("volvo240.png"); 
+        left: 50%;
+        bottom: 80px;
+    }
+    100% {
+        background-image: url("volvo240.png"); 
+        left: 50%;
+        bottom: 0;
+    }
+}
+
+@keyframes driveout {
+    0% {
+        background-image: url("volvo240.png"); 
+        left: 50%;
+        bottom: 0;
+    }
+    100% {
+        background-image: url("volvo240.png"); 
+        left: 100%;
+        bottom: 0;
+    }
+}
+
+#lift {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    height: 25px;
+    width: 250px;
+    background-color: black;
+}
+
+#lift2 {
+    position: absolute;
+    bottom: 20%;
+    left: 57.5%;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(0, 0, 0, 0.712);
+    z-index: 0;
+    animation: lift2up 2s 5s forwards, lift2down 2s 11s forwards;
+}
+
+@keyframes lift2up {
+    0% {
+        bottom: 20%;
+        left: 57.5%;
+    }
+    100% {
+        bottom: 23%;
+        left: 57.5%;
+        height: 100px;
+    }
+}
+
+@keyframes lift2down {
+    0% {
+        bottom: 23%;
+        left: 57.5%;
+        height: 100px;
+    }
+    100% {
+        bottom: 20%;
+        left: 57.5%;
+    }
+}
+
+#gardiner {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    animation: gardiner 6s 7s forwards ease-in-out;
+    z-index: 1;
+}
+
+@keyframes gardiner {
+    0% {
+        bottom: 100%;
+        left: 50%;
+    }
+    50% {
+        bottom: 20%;
+        left: 50%;
+    }
+
+    100% {
+        bottom: 100%;
+        left: 50%;
+    }
+}

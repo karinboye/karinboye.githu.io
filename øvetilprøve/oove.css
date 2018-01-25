@@ -1,0 +1,28 @@
+:root {
+    --fyll:10px;
+}
+
+
+
+header {
+    color:rgb(185, 137, 161);
+    font-size: 1.2em;
+    padding: var(--fyll);
+    padding-bottom: 20px;
+}
+
+article {
+    font-size: 1.1em;
+    padding: var(--fyll);
+}
+
+#liste {
+    width: 90vw;
+    min-height: 50vh;
+    border: 2px solid rgb(150, 108, 108);
+    padding: 1em;
+}
+
+.land {
+  background-color: whitesmoke;
+}
