@@ -1,0 +1,19 @@
+<head>
+
+    <link rel="stylesheet" href="https://get.mavo.io/mavo.css"/>
+    <script src="https://get.mavo.io/mavo.js"></script>
+   
+</head>
+
+
+
+
+<div mv-app="colorpicker" mv-storage="local"
+     style="background-color: [color];">
+    <input type="range" property="hue" max="360" />
+    <input type="range" property="saturation" />
+    <input type="range" property="lightness" />
+
+    <input property="color" readonly
+           value="hsl([hue], [saturation]%, [lightness]%)" />
+</div>
