@@ -7,7 +7,7 @@ padding: 0;
 
 }
 body {
-    background-color: #fff;
+    background-color: #ffffff;
     font-family: 'Hind', sans-serif;
     font-size: 18px;
     position: relative;
@@ -17,7 +17,7 @@ h1 {
     font-family: 'Nobile', sans-serif;
     text-align: center;
     font-size: 175%;
-    color: #d46464;
+    color: #b86969;
     text-transform: uppercase;
     letter-spacing: 3px;
     padding: 3% 0; 
@@ -94,21 +94,21 @@ img {
 .parallax-inner {
     padding-top: 90px;
     padding-bottom:  300px;
-   color: white;
+   color: #ffffff;
     
 }
 .parallax-1 {
-    background: url(bilder/pokhara.jpg) repeat fixed; 
+    background: url(../pokhara.jpg) repeat fixed; 
     text-align: center;
     
 }
 .parallax-inner h3, .parallax-inner p  {
-    color: #f1f1f1;
+    color: #b86969;
 
 }
 /*---end store bilde--*/
 footer {
-    background:  #d46464;
+    background:  #b86969;
     opacity: 0.9;
     width: 100%;
     margin-top: 5%;
@@ -117,10 +117,10 @@ footer {
       
 }
 footer p {
-    color: #fff;
+    color: #ffffff;
 }
 /*---Media Outries--*/
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
     .slider .bx-wrapper .bx-controls {
     display: none;
     }
