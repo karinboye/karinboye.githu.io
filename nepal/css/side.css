@@ -1,0 +1,40 @@
+#header {
+    position: absolute;  /* posisjon */
+    height: 15%; 
+/* høyde */ 
+    width: 100%;
+    top:0;    /* topp */
+    left: 0;   /* venstre */
+    border: solid black; 
+}
+#sidebar {
+    position: absolute;
+    width: 10em;
+    top: 15%;
+    bottom: 100px;
+    left: 0;
+    border: solid black; 
+
+}
+#main {
+    position: absolute; 
+
+    top: 15%;
+
+    height: calc(85% - 100px);
+    width: calc(100% - 10em);
+    bottom: 100px;
+
+    left: 10em;
+   
+
+}
+#footer {
+    position: absolute;
+
+    height: 100px; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border: solid black; 
+}
