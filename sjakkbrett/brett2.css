@@ -1,0 +1,37 @@
+#brett {
+    width: calc( 50px * 8);
+    height: calc(50px* 8);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    border: solid black 1px;
+}
+
+#brett div {
+    width: 50px;
+    height: 50px;
+    background: red;
+}
+
+#brett div:nth-child(odd) {
+    background: black;
+}
+
+#brett div:nth-child(2n+9) {
+    background: red;
+}
+
+#brett div:nth-child(2n+10) {
+    background: black;
+}
+#brett div:nth-child(2n+18) {
+    background: red;
+}
+
+#brett div:nth-child(2n+17) {
+    background: black;
+}
+
+
+
+
+
