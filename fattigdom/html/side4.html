@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="side4.css">
+    <link rel="stylesheet" href="../css/fattig.css">
+    <script src="side4.js"></script>
+    <title>Jeg vil hjelpe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+
+
+ 
+
+        <ul class="nav-menu">
+                <li>
+                    <a href="../html/fattig.html">Forside</a>
+                </li>
+                <li>
+                    <a href="../html/side2.html">Om</a>
+                </li>
+                <li>
+                    <a href="side3.html">Bilder</a>
+                </li>
+                <li>
+                        <a href="../html/side6.html">Video</a>
+                    </li>
+        
+                <li>
+                    <a href="side4.html">Hjelp</a>
+        
+                </li>
+                
+                <li>
+                    <a href="../html/fattig.html">Tilbake</a>
+                </li>
+    
+
+
+
+        <button class="openBtn" onclick="openSearch()">Søk</button>
+      
+        <div id="myOverlay" class="overlay">
+                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                <div class="overlay-content">
+                  <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                  </form>
+                </div>
+              </div>
+
+       
+
+
+    </ul>
+
+
+    <a name="home">
+
+
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: rgba(255, 255, 255, 0.9);
+            }
+
+            li {
+                float: left;
+            }
+
+            li a {
+                display: block;
+                color: #534D4D;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            body {
+    font-family: Arial;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.openBtn {
+    background: #f1f1f1;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.openBtn:hover {
+    background: #bbb;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    
+}
+
+.overlay-content {
+    position: relative;
+    top: 46%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+
+   
+    
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+    
+    
+}
+
+.overlay .closebtn:hover {
+    color: #ccc;
+}
+
+.overlay input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: white;
+    
+}
+
+.overlay input[type=text]:hover {
+    background: #f1f1f1;
+}
+
+.overlay button {
+    float: left;
+    width: 20%;
+    padding: 15px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.overlay button:hover {
+    background: #bbb;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+
+        </style>
+
+        <header>
+            <h1>Med disse gavene gjør du verden litt bedre</h1>
+
+        </header>
+        <article>
+            <div id="bilder"></div>
+            <div id="liste" class="kunde">
+                <div>
+                    Engangsbeløp:
+                    <span id="kundevelger"></span>
+                </div>
+
+            </div>
+
+
+            <div id="liste2" class="kunde">
+                <div> Månetligbeløp:
+                    <span id="kundevelger"></span>
+
+                </div>
+
+
+            </div>
+
+        </article>
+        <div id="banner-wrapper">
+            <div id="ja">
+
+            <section class="one-third">
+
+                <img src="../bilder/skole.jpg">
+                <a href="https://strommestiftelsen.no/gi-en-skoleplass" target="_blank">
+                    <br>
+                    <h4>Gi en skoleplass </h4>
+                    </br>
+                </a>
+
+
+
+            </section>
+
+            <section class="one-third">
+
+                <img src="../bilder/tryggh.jpg">
+
+
+                <a href="https://strommestiftelsen.no/gi-trygghet" target="_blank">
+                    <br>Gi et barn trygghet </br>
+                </a>
+
+            </section>
+
+
+
+
+            <section class="one-third">
+
+                <img src="../bilder/j.jpg">
+
+                <a href="https://strommestiftelsen.no/gi-et-grnderlan" target="_blank">
+                    <br>Gi en jobb </br>
+                </a>
+            </section>
+
+            <section class="one-third">
+
+                <img src="../bilder/ek.jpg">
+
+                <a href="https://strommestiftelsen.no/produkter/stopp-barneekteskap" target="_blank">
+                    <br>Stopp Barneekteskap </br>
+                </a>
+            </section>
+
+
+            <section class="one-third">
+
+                <img src="../bilder/stemme.jpg">
+
+                <a href="https://strommestiftelsen.no/gi-en-stemme" target="_blank">
+                    <br>Gi jente en stemme</br>
+                </a>
+            </section>
+
+
+            <section class="one-third">
+
+                <img src="../bilder/sot.jpg">
+
+                <a href="https://strommestiftelsen.no/gi-en-hjertevenn" target="_blank">
+                    <br>Gi et fadderskap </br>
+                </a>
+            </section>
+            </section>
+
+        </div>
+
+    </div>
+
+
+    
+            <div id="video">
+
+
+
+                <h2>Hva er pengene dine verdt?</h2>
+
+                <br>
+                <embed src="https://www.youtube.com/embed/cMnRgX3DU6U"></embed>
+                <br/>
+
+            </div>
+
+        </div>
+
+
+        
+      <script>
+      function openSearch() {
+          document.getElementById("myOverlay").style.display = "block";
+      }
+      
+      function closeSearch() {
+          document.getElementById("myOverlay").style.display = "none";
+      }
+      </script>
+
+
+
+
+        <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+        <script>
+            setup();
+        </script>
+
+        <!---End Banner wrapper-->
+        <div class="clearfix"></div>
+        <footer>
+            <p> Karin Boye</p>
+        </footer>
+
+
+
+
+        <p style="text-align: center;">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="https://www.facebook.com/karin.boye.5?fref=ts" target="_blank">Laget av Karin</a>
+            </p>
+</body>
+
+</html>

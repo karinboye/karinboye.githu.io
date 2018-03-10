@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+    <ul class="nav-menu">
+        <li>
+            <a href="../html/fattig.html">Forside</a>
+        </li>
+        <li>
+            <a href="../html/side2.html">Om</a>
+        </li>
+        <li>
+            <a href="side3.html">Bilder</a>
+        </li>
+        <li>
+                <a href="../html/side6.html">Video</a>
+            </li>
+
+        <li>
+            <a href="side4.html">Hjelp</a>
+
+        </li>
+        
+        <li>
+            <a href="../html/fattig.html">Tilbake</a>
+        </li>
+
+
+
+
+
+
+
+  </ul>
+
+
+
+  <a name="home">
+
+
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #C6006F;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+
+      body {
+        font-family: Arial;
+        margin: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      img {
+        vertical-align: middle;
+      }
+
+      /* Position the image container (needed to position the left and right arrows) */
+
+      .container {
+        position: relative;
+      }
+
+      /* Hide the images by default */
+
+      .mySlides {
+        display: none;
+      }
+
+      /* Add a pointer when hovering over the thumbnail images */
+
+      .cursor {
+        cursor: pointer;
+      }
+
+      /* Next & previous buttons */
+
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+
+      .prev:hover,
+      .next:hover {
+        background-color: white;
+      }
+
+      /* Number text (1/3 etc) */
+
+      .numbertext {
+        color: white;
+        font-size: 30px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+
+      /* Container for image text */
+
+      .caption-container {
+        text-align: center;
+        background-color: #C6006F;
+        padding: 2px 16px;
+        color: #C6006F;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Six columns side by side */
+
+      .column {
+        float: left;
+        width: 16.66%;
+      }
+
+      /* Add a transparency effect for thumnbail images */
+
+      .demo {
+        opacity: 0.6;
+      }
+
+      .active,
+      .demo:hover {
+        opacity: 1;
+      }
+
+
+      .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+</style>
+
+
+
+
+
+
+
+
+    <div class="container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="../bilder/4.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="../bilder/5.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="../bilder/b.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="../bilder/p.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="../bilder/tuva.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="../bilder/oi.jpg" style="width:100%">
+      </div>
+      
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="../bilder/4.jpg" style="width:100%" onclick="currentSlide(1)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../bilder/5.jpg" style="width:100%" onclick="currentSlide(2)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../bilder/b.jpg" style="width:100%" onclick="currentSlide(3)" >
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../bilder/p.jpg" style="width:100%" onclick="currentSlide(4)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../bilder/tuva.jpg" style="width:100%" onclick="currentSlide(5)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../bilder/oi.jpg" style="width:100%" onclick="currentSlide(6)" >
+        </div>
+        
+      </div>
+    </div>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+    </script>
+
+</body>
+
+</html>
+
+</body>
+
+</html>

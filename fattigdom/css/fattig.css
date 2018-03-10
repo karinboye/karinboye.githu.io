@@ -1,0 +1,156 @@
+@import url(https://fonts.googleapis.com/css?family=Hind); /*--- Body Font --*/
+@import url(https://fonts.googleapis.com/css?family=Nobile); /*--- Heading Font --*/
+* {
+margin: 0;
+order: 0;
+padding: 0; 
+
+}
+body {
+    background-color: white;
+    font-family: 'Hind', sans-serif;
+    font-size: 18px;
+    position: relative;
+
+}
+h1 {
+    font-family: 'Nobile', sans-serif;
+    text-align: center;
+    font-size: 175%;
+    color: #817171;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 3% 0; 
+    
+}
+h3 {
+    font-family: 'Nobile', sans-serif;
+    text-align: center;
+    color: #4A4444;
+    text-transform: uppercase;
+    padding: 1%; 
+
+}
+
+p{
+    padding: 2%;
+    color: #4A4444;
+    text-align: justify;
+
+}
+img {
+    max-width: 100%;
+    height: auto;
+    
+}
+#banner-wrapper {
+    max-width: 1288px;
+    margin: 0 auto;
+
+}
+
+
+/*--hvor teksten står--*/
+
+.one-half {
+    width: 44%;
+    float: left;
+    margin: 2% 0 3% 4%;
+    text-align: center;
+     
+}
+
+.one-third {
+    width: 28%;
+    float: left;
+    margin: 2% 0 3% 4%;
+    text-align: center;
+
+}
+
+.left-col{
+    width: 60%;
+    float: left;
+    margin: 4% 0 4% 4%;
+   
+
+}
+.sidebar {
+    width: 26%;
+    float: right;
+    margin: 4% 4%;
+
+
+
+}
+.clearfix {
+    clear: both;
+    align-content: center;
+
+    
+}
+/*---storebilde--*/
+
+.parallax-inner {
+    padding-top: 90px;
+    padding-bottom:  300px;
+   color: black;
+    
+}
+.parallax-1 {
+    background: url(../bilder/kk.jpg) no-repeat;
+    text-align: center;
+}
+.parallax-inner h3, .parallax-inner p  {
+    color: #40741d;
+
+}
+/*---end store bilde--*/
+footer {
+    background:  #C6006F;
+    opacity: 0.9;
+    width: 100%;
+    margin-top: 5%;
+    padding: 1% 0;
+    overflow: auto;
+      
+}
+footer p {
+    color: #fff;
+}
+/*---Media Outries--*/
+@media screen and (max-width: 768px) {
+    .slider .bx-wrapper .bx-controls {
+    display: none;
+    }
+    .parallax-inner{
+        display: none;
+    }
+    .one-third{
+        width: 100%;
+        margin: 4% 0;
+    }
+.one-half {
+    display: none;
+}
+h1 {
+    font-size: 125%;
+}
+.left-col {
+    width: 100%;
+    margin: 0 0 3% 0;
+}
+.slidebar {
+    width: 100%;
+    margin: 0;
+}
+img {
+    width: 100%;
+    
+}
+h3 {
+    padding-top: 3%;
+}
+
+
+

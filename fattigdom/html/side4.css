@@ -1,0 +1,76 @@
+:root {
+    --fyll:10px;
+}
+
+
+
+header {
+    color:#C6006F;
+    font-size: 1.2em;
+    padding: var(--fyll);
+    padding-bottom: 20px;
+   
+}
+
+article {
+    font-size: 1.3em;
+    padding: var(--fyll);
+    display: flex;
+    color: white;
+    text-align: center;
+    width: 600px;  /* Or whatever */
+    height: 400px; /* Or whatever */
+    margin: auto;  /* Magic! */
+ 
+    
+
+    
+    
+}
+
+#liste {
+    width: 20vw;
+    min-height: 20vh;
+    border: 2px solid #C6006F;
+    padding: 1em;
+    display: grid;
+    background-color:#C6006F;
+    
+
+    
+}
+
+#liste2 {
+    width: 20vw;
+    min-height: 20vh;
+    border: 2px solid #C6006F;
+
+    padding: 1em;
+    display: grid;
+    background-color:#C6006F;
+
+}
+.kunde {
+  background-color: white;
+  
+}
+
+#video {
+   
+    text-align: center;
+    font-size: 120%;
+    color: #817171;
+    padding: 10px;
+
+
+}
+
+#ja {
+   display: flex;
+
+   
+   
+    
+  
+   
+}
