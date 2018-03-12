@@ -118,37 +118,44 @@ footer {
 footer p {
     color: #fff;
 }
-/*---Media Outries--*/
-@media screen and (max-width: 768px) {
-    .slider .bx-wrapper .bx-controls {
-    display: none;
-    }
-    .parallax-inner{
-        display: none;
-    }
-    .one-third{
-        width: 100%;
-        margin: 4% 0;
-    }
-.one-half {
-    display: none;
-}
-h1 {
-    font-size: 125%;
-}
-.left-col {
-    width: 100%;
-    margin: 0 0 3% 0;
-}
-.slidebar {
-    width: 100%;
+
+ul {
+    list-style-type: none;
     margin: 0;
-}
-img {
-    width: 100%;
-    
-}
-h3 {
-    padding-top: 3%;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #534D4D;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}

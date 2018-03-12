@@ -65,7 +65,8 @@ img {
     float: left;
     margin: 2% 0 3% 4%;
     text-align: center;
-
+  
+    
 }
 
 .left-col{
@@ -118,39 +119,3 @@ footer {
 footer p {
     color: #fff;
 }
-/*---Media Outries--*/
-@media screen and (max-width: 768px) {
-    .slider .bx-wrapper .bx-controls {
-    display: none;
-    }
-    .parallax-inner{
-        display: none;
-    }
-    .one-third{
-        width: 100%;
-        margin: 4% 0;
-    }
-.one-half {
-    display: none;
-}
-h1 {
-    font-size: 125%;
-}
-.left-col {
-    width: 100%;
-    margin: 0 0 3% 0;
-}
-.slidebar {
-    width: 100%;
-    margin: 0;
-}
-img {
-    width: 100%;
-    
-}
-h3 {
-    padding-top: 3%;
-}
-
-
-

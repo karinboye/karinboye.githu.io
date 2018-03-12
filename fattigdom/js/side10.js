@@ -33,7 +33,13 @@ function setup() {
             if (dyrene) {
                 let dyrnr = Object.keys(dyrene);
                 let dyrliste = `<ol>` +
-                    dyrnr.map(e => `<li>${dyrene[e].navn} ${dyrene[e].art}</li>`).join("")
+                    dyrnr.map(e => `
+                    <li>
+                    Navn:${dyrene[e].navn} 
+                    Situasjon:${dyrene[e].art} 
+                    Kjønn:${dyrene[e].kjønn} 
+                    Alder:${dyrene[e].alder}
+                    </li>`).join("")
                     + `</ol>`;
                 divDyr.innerHTML = dyrliste;
 
@@ -52,4 +58,3 @@ function setup() {
     }
 
 }
-

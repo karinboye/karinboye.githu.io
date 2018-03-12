@@ -122,7 +122,7 @@ footer p {
 /*---Media Outries--*/
 @media screen and (max-width: 768px) {
     .slider .bx-wrapper .bx-controls {
-    display: none;
+    display: none;}
     }
     .parallax-inner{
         display: none;
