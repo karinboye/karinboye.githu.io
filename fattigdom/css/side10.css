@@ -125,6 +125,7 @@ body {
     color: white;
   }
   .fa-instagram {
-    background: #125688;
     color: white;
+    background: rgb(204, 0, 255); 
+    background: linear-gradient(rgb(225, 0, 255), rgb(255, 165, 31));
   }
