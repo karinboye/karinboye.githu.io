@@ -7,7 +7,7 @@ padding: 0;
 
 }
 body {
-    background-color: white;
+    background-color: #fff;
     font-family: 'Hind', sans-serif;
     font-size: 18px;
     position: relative;
@@ -65,8 +65,7 @@ img {
     float: left;
     margin: 2% 0 3% 4%;
     text-align: left;
-  
-    
+
 }
 
 .left-col{
@@ -93,17 +92,18 @@ img {
 /*---storebilde--*/
 
 .parallax-inner {
-    padding-top: 90px;
-    padding-bottom:  300px;
-   color: black;
+    padding-top: 50px;
+    padding-bottom:  350px;
+   color: rgb(255, 255, 255);
+
     
 }
 .parallax-1 {
-    background: url(../bilder/kk.jpg) no-repeat;
+    background: url(../bilder/dr.jpg) no-repeat;
     text-align: center;
 }
 .parallax-inner h3, .parallax-inner p  {
-    color: #40741d;
+    color: #f1f1f1;
 
 }
 /*---end store bilde--*/
@@ -111,11 +111,54 @@ footer {
     background:  #C6006F;
     opacity: 0.9;
     width: 100%;
-    margin-top: 5%;
-    padding:  0;
+    margin-top: 1%;
+    padding: 0;
     overflow: auto;
       
 }
 footer p {
     color: #fff;
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #534D4D;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-instagram {
+    color: white;
+    background: rgb(204, 0, 255); 
+    background: linear-gradient(rgb(225, 0, 255), rgb(255, 165, 31));
+  }
