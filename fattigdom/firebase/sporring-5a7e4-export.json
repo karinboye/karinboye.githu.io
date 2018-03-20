@@ -1,0 +1,72 @@
+{
+    "dyr" : {
+      "200" : {
+        "alder" : "5år",
+        "art" : "forlatt",
+        "kjønn" : "jente",
+        "kundenr" : 1001,
+        "navn" : "Fatima"
+      },
+      "201" : {
+        "alder" : "7år",
+        "art" : "sult",
+        "kjønn" : "gutt",
+        "kundenr" : 1003,
+        "navn" : "Patrik"
+      },
+      "202" : {
+        "alder" : "3år",
+        "art" : "gatebarn",
+        "kjønn" : "jente",
+        "kundenr" : 1002,
+        "navn" : "Babita"
+      },
+      "203" : {
+        "alder" : "9år",
+        "art" : "sult",
+        "kjønn" : "gutt",
+        "kundenr" : 1004,
+        "navn" : "Neymar"
+      },
+      "204" : {
+        "alder" : "2år",
+        "art" : "forlatt",
+        "kjønn" : "gutt",
+        "kundenr" : 1005,
+        "navn" : "Thomas"
+      }
+    },
+    "kunde" : {
+      "1001" : {
+        "epost" : "karina.boye@live.no",
+        "etternavn" : "boye",
+        "fornavn" : "Karina",
+        "mobil" : 41388233
+      },
+      "1002" : {
+        "epost" : "sandra.io00@gmail.com",
+        "etternavn" : "io",
+        "fornavn" : "Sandra",
+        "mobil" : 41388900
+      },
+      "1003" : {
+        "espost" : "tomas.e@hotmail.com",
+        "etternvan" : "perdersen",
+        "fornavn" : "Tomas",
+        "mobil" : 47892843
+      },
+      "1004" : {
+        "espost" : "haakon.borge@gmail.com",
+        "etternavn" : "borge",
+        "fornavn" : "Haakon",
+        "mobil" : 85268529
+      },
+      "1005" : {
+        "epost" : "joakimott@live.no",
+        "etternavn" : "Ott",
+        "fornavn" : "Joakim",
+        "mobil" : 85268534
+      }
+    }
+  }
+  

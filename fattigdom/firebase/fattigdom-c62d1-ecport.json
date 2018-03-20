@@ -1,0 +1,9 @@
+{
+    "jegvilhjelpe" : {
+      "jegvilgi" : {
+        "engangsbelop" : [ "100kr", "500kr", "1000kr", "5000kr" ],
+        "montligbelop" : [ "200kr", "300kr", "500kr", "1000kr" ]
+      }
+    }
+  }
+  
