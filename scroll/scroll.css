@@ -1,0 +1,23 @@
+html,
+body {
+  height: 100%;
+}
+
+.photo-before,
+.photo-after {
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.photo-before {
+    background-image: url(../fattigdom/bilder/4.jpg);
+  }
+  
+  .photo-after {
+    background-image: url(../fattigdom/bilder/fatima
+    .jpg);
+    border-top: 1px solid #ccc;
+  }
