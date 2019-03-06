@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Video</title>
+<link href="../css/side6.css" rel="stylesheet">
+<link rel="shortcut icon" type="image/png" href="../bilder/pp.svg"/>
+
+</head>
+<body>
+    
+
+<video autoplay muted loop id="myVideo">
+  <source src="../lyd/videoplayback.mp4" type="video/mp4">
+
+</video>
+
+
+<iframe src="../lyd/videoplayback.mp4" type="video/mp4"> </iframe>
+
+
+
+<div class="content">
+  
+  
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>

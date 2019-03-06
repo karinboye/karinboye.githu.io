@@ -1,0 +1,68 @@
+body {
+   
+  color: rgb(240, 158, 215);
+  font-size: 1.2pm; 
+
+
+}
+/*--kan lage sånn for alle tagger (body gleder for hele)--*/ 
+
+div {
+    color: green; 
+
+}
+
+/*-- den mest presise regelen vinner --*/ 
+main { 
+color: aqua; 
+}
+
+divmain { 
+    color: blueviolet;
+}
+
+span {
+    color: bisque; 
+}   
+
+span:nth-child(2) {
+    color: blanchedalmond
+}
+/*-- skiller ut hva som skal være hva--*/ 
+
+.tore {
+    color: rgb(70, 52, 52); 
+}
+
+/*-- tore hører til en classe, men har ikke det --*/ 
+
+
+li:nth-child(od) {
+    color: aquamarine; 
+
+    /*-- sier at alle od skal ha den fargen--*/ 
+}
+
+
+/*-- skal ha annenhver liste grønn og rød søk opp:  
+css list alternating color elns og finn regler--*/
+
+#main { 
+position: absolute; 
+right: 10px; 
+top: 10px;
+height: 60px; 
+width: 80px; 
+background-color: blueviolet; 
+}
+
+
+#bilder {
+    background-image: url(bilde.jpg); 
+    background-repeat: no-repeat;
+    background-size: 50px; 
+
+}
+
+
+

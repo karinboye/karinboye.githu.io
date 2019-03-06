@@ -1,0 +1,193 @@
+@import url(https://fonts.googleapis.com/css?family=Hind); /*--- Body Font --*/
+@import url(https://fonts.googleapis.com/css?family=Nobile); /*--- Heading Font --*/
+* {
+margin: 0;
+order: 0;
+padding: 0; 
+
+}
+body {
+    background-color: #fff;
+    font-family: 'Hind', sans-serif;
+    font-size: 18px;
+    position: relative;
+
+}
+h1 {
+    font-family: 'Nobile', sans-serif;
+    text-align: center;
+    font-size: 175%;
+    color: #817171;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 3% 0; 
+    
+}
+h3 {
+    font-family: 'Nobile', sans-serif;
+    text-align: center;
+    color: #4A4444;
+    text-transform: uppercase;
+    padding: 1%; 
+
+}
+
+p{
+    padding: 2%;
+    color: #4A4444;
+    text-align: justify;
+
+}
+img {
+    max-width: 100%;
+    height: auto;
+    
+}
+#banner-wrapper {
+    max-width: 1288px;
+    margin: 0 auto;
+
+}
+
+/*---Start Image Slider Style--*/
+.slider {
+    width: 100%;
+
+}
+.slider1 img{
+    min-width: 100%;
+    margin: 0 auto; 
+}
+.slider .bx-wrapper .bx-contrls-direction a {
+    outline: 0 none;
+    position: absolute;
+    text-align: -9999px;
+    top: 40%;
+    height: 71px;
+    width: 40px;
+    z-index: -1;
+    transition: all 0.7s;
+
+}
+.slider .bx-wrapper:hover .bx-contrls-direction a {
+    z-index: 5; 
+}
+.slider .bx-wrapper .bx-prev {
+    background: #000 url(img/left-arrow-white.png) no-repeat 8px 13px;
+    left: 8px;
+    opacity: 0.3;
+
+}
+.slider .bx-wrapper .bx-prev:hover {
+    opacity: 0.6;
+    
+}
+.slider .bx-wrapper .bx-next {
+    background: #000 url(img/rigth-arrow-white.png) no-repeat 12px 10px;
+    right:  8px;
+    opacity: 0.3;
+
+}
+.slider .bx-wrapper .bx-next:hover {
+    opacity: 0.6;
+    
+}
+/*---End Image Slider Style--*/
+
+.one-half {
+    width: 44%;
+    float: left;
+    margin: 2% 0 3% 4%;
+    text-align: center;
+     
+}
+
+.one-third {
+    width: 28%;
+    float: left;
+    margin: 2% 0 3% 4%;
+    text-align: center;
+
+}
+
+.left-col{
+    width: 60%;
+    float: left;
+    margin: 4% 0 4% 4%;
+
+}
+.sidebar {
+    width: 26%;
+    float: right;
+    margin: 4% 4%;
+
+}
+.sidebar {
+    opacity:  0.8;
+
+}
+.clearfix {
+    clear: both;
+}
+/*---Start Parallax Section--*/
+
+.parallax-inner {
+    padding-top: 90px;
+    padding-bottom:  300px;
+    
+}
+.parallax-1 {
+    background: url(poor2.jpg) repeat fixed; 
+    text-align: center;
+}
+.parallax-inner h3, .parallax-inner p  {
+    color: #f1f1f1;
+
+}
+/*---End Parallax Section--*/
+footer {
+    background:  rgb(150, 137, 137);
+    opacity: 0.9;
+    width: 100%;
+    margin-top: 5%;
+    padding: 1% 0;
+    overflow: auto;
+      
+}
+footer p {
+    color: #fff;
+}
+/*---Media Outries--*/
+@media screen and (max-width: 768px) {
+    .slider .bx-wrapper .bx-controls {
+    display: none;
+    }
+    .parallax-inner{
+        display: none;
+    }
+    .one-third{
+        width: 100%;
+        margin: 4% 0;
+    }
+.one-half {
+    display: none;
+}
+h1 {
+    font-size: 125%;
+}
+.left-col {
+    width: 100%;
+    margin: 0 0 3% 0;
+}
+.slidebar {
+    width: 100%;
+    margin: 0;
+}
+img {
+    width: 100%;
+    
+}
+h3 {
+    padding-top: 3%;
+}
+}

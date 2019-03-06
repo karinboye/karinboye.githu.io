@@ -1,0 +1,121 @@
+#meny {
+    background-image: linear-gradient(to right, white,#ccc);;
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    width: 20%;
+    height: 85%;
+    }
+     
+    #meny ul {
+    -webkit-padding-start: 0;
+    }
+     
+    #meny li {
+    display: block;
+    }
+     
+    #meny li a {
+    text-decoration: none;
+    color:whitesmoke;
+    display: block;
+    margin: 8px;
+    text-align: center;
+    padding-top:10px;
+    height: 2em;
+    background: #89898F; 
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #C0BDBD; 
+    }
+     
+    #meny li a:hover {
+    box-shadow: 3px 3px 3px #CACACA; 
+    }
+     
+    #meny li a:active {
+    transform: translate(2px,2px); 
+    box-shadow: none; 
+    }
+     
+    #meny li a.showing {
+    background: whitesmoke;
+    color:rgb(255, 255, 255);
+    }
+    
+    
+     
+    .tittel {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 15%;
+    background: url("bilder/tittel.png");
+    filter: opacity(0.9);
+    background-color: rgb(167, 144, 144);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-shadow: 3px 2px rgba(231, 219, 219, 0.2);
+    text-align: center;
+    font-size: 4em;
+    color: rgb(230, 220, 220);
+    overflow: hidden;
+    /*mix-blend-mode: difference;*/
+    }
+    #innhold {
+    position: absolute;
+    left: 20%;
+    bottom: 0%;
+    width: 80%;
+    height: 85%;
+    background: whitesmoke;
+    }
+     
+    #innhold p {
+    padding-left:45px;
+    }
+     
+    #bunn {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1%;
+    background: #FFFFFF;
+    }
+     
+    table {
+    border: solid 2px gray;
+    border-collapse: collapse;
+    }
+     
+    th,td {
+    padding-left:5px;
+    }
+    th {
+    background: paleturquoise;
+    }
+     
+    tr:nth-child(odd) {
+    background: rgba(100,10,10,0.2);
+    }
+     
+    td:nth-child(odd) {
+    background: rgba(49, 165, 165, 0.20);
+    }
+
+    #innhold {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        }
+        #innhold div {
+        background: rgb(167, 144, 144);
+        width: 29em;
+        height: 25em;
+        margin: 1em;
+        text-align: center;
+        }
+  

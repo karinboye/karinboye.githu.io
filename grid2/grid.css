@@ -1,0 +1,13 @@
+main {
+    display: grid;
+    grid-template-columns: 200px 200px 200px; 
+    grid-column-gap: 15px;
+    grid-gap: 50px; 
+    grid-auto-rows: mimax (60px,auto); 
+
+
+}
+article {
+    background-color: rgb(228, 177, 235);
+
+}
