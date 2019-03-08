@@ -9,13 +9,12 @@ function setup() {
 	
 	// 1 => <div class='vegg'></div>
 	// 2 => <div class='peng'></div>
-	// 3 => <div class='ground'></div>
-	// 4 => <div class='ghost'></div>
+	// 3 => <div class='bakgrunn'></div>
 	// 5 => <div class='pacman'></div>
 	// map = [ 1, 2, 3 ]
 	// map = [ [1,2,3], [1,2,3], [1,2,3] ];
 
-// @ts-ignore
+
 	var pacman = {
 		x: 6,
 		y: 4
@@ -27,14 +26,14 @@ function setup() {
 		[1,2,2,2,2,2,1,2,2,2,2,2,1], 
 		[1,2,1,1,1,2,1,2,1,1,1,2,1], 
 		[1,2,1,2,2,2,2,2,2,2,1,2,1], 
-		[1,2,2,2,1,1,5,1,1,2,2,2,1], 
+		[1,2,2,2,1,1,4,1,1,2,2,2,1], 
 		[1,2,1,2,2,2,2,2,2,2,1,2,1], 
 		[1,2,1,1,2,2,1,2,2,1,1,2,1], 
 		[1,2,2,2,2,2,1,2,2,2,2,2,1], 
 		[1,1,1,1,1,1,1,1,1,1,1,1,1]
     ]
     
-    // elenmentet 
+   //id
 	var el = document.getElementById('verden');
 	
 	
@@ -59,12 +58,10 @@ function setup() {
 					el.innerHTML += "<div class='peng'></div>";
 				}
 				else if (map[y][x] === 3) {
-					el.innerHTML += "<div class='ground'></div>";
+					el.innerHTML += "<div class='bakgrunn'></div>";
 				}
+			
 				else if (map[y][x] === 4) {
-					el.innerHTML += "<div class='ghost'></div>";
-				}
-				else if (map[y][x] === 5) {
 					el.innerHTML += "<div class='pacman'></div>";
 				}
 			}
@@ -77,19 +74,19 @@ function setup() {
 
 
     
-    // løkke nr2, styre pacman
+    // if setninger nr2, styre pacman
 	tegneVerden();
-	document.onkeydown = function(event){
+	 document.onkeydown = function(event){
 		// console.log(event);
         if (event.keyCode === 37){ //  venstre
             
-			if ( map[pacman.y][pacman.x-1] !== 1){
+			if ( map[pacman.y][pacman.x-1] !== 1){   //ikke gå på veggen, krasj
 
             
 
 				map[pacman.y][pacman.x] = 3;
 				pacman.x = pacman.x - 1;
-				map[pacman.y][pacman.x] = 5;
+				map[pacman.y][pacman.x] = 4;
                 tegneVerden();
                   
           
@@ -100,34 +97,33 @@ function setup() {
 			if ( map[pacman.y-1][pacman.x] !== 1){   //ikke gå på veggen, krasj
 				map[pacman.y][pacman.x] = 3;
 				pacman.y = pacman.y - 1;
-				map[pacman.y][pacman.x] = 5;
+				map[pacman.y][pacman.x] = 4;
 				tegneVerden();
 			}
 		}
         else if (event.keyCode === 39){ //  høyre
             
-			if ( map[pacman.y][pacman.x+1] !== 1){
+			if ( map[pacman.y][pacman.x+1] !== 1){   //ikke gå på veggen, krasj
 				map[pacman.y][pacman.x] = 3;
 				pacman.x = pacman.x + 1;
-				map[pacman.y][pacman.x] = 5;
+				map[pacman.y][pacman.x] = 4;
 				tegneVerden();
 			}
 		}
         else if (event.keyCode === 40){ //  ned
             
-			if ( map[pacman.y+1][pacman.x] !== 1){
+			if ( map[pacman.y+1][pacman.x] !== 1){    //ikke gå på veggen, krasj
 				map[pacman.y][pacman.x] = 3;
 				pacman.y = pacman.y + 1;
-				map[pacman.y][pacman.x] = 5;
+				map[pacman.y][pacman.x] = 4;
 				tegneVerden();
 			}
 		}
         console.log(map)
         
-        // hvorfor 37,38, 39 og 40? 
 	}
+} 
 
 
-	
-	
-}
+
+		
